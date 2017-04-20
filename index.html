@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" href="lib/ionic/css/ionic.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<style>
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+	
+</head>
+<body>
+
+
+	<!-- default, light, stable, positive, calm, balanced, energized, assertive, royal,dark
+
+	设置头部导航条的样式，比如：bar-样式名 -->
+
+
+	<!-- 在ionic里面，如果想让某一块内容可以滑动，就需要给它套一个ion-content -->
+	<ion-nav-bar class="bar-assertive">
+		<!-- 添加返回按钮的 默认按钮动作-->
+		<ion-nav-back-button>
+		
+		</ion-nav-back-button>
+	</ion-nav-bar>
+
+	<!--初始化时渲染视图模版-->
+	<ion-nav-view></ion-nav-view>
+	
+	<script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/service.js"></script>
+		
+</body>
+</html>

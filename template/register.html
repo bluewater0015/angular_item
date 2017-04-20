@@ -1,0 +1,14 @@
+<ion-view view-title="注册">
+
+	<ion-nav-buttons side="right">
+		<button ng-click="reg_right()" class="reg_login">登录</button>
+	</ion-nav-buttons>
+	<ion-content class="item items">
+		<form action="">
+			<input class="input" type="text" placeholder="账号" ng-model="user.name"/>
+			<input class="input" type="password" placeholder="密码" ng-model="user.pwd"/>
+			<input class="input" type="password" placeholder="重复密码" />
+			<button class="form_agree" ng-click="registera()">同意服务协议并注册</button>
+		</form>
+	</ion-content>
+</ion-view>

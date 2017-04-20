@@ -1,0 +1,41 @@
+<!--显示在父ionNavBar的标题。-->
+<ion-view title="分类">
+	<ion-content>
+		<div class="bar-color">
+			<div class="bar_input">
+				<input type="text" placeholder="请输入搜索内容"/ >
+			</div>
+		</div>
+		<ion-list ng-click="add()" ng-class="{true:'all',false:'all_bottom'}[isTrue]">
+			<ion-item class="all">全部</ion-item>
+		</ion-list>
+		<div class="list" ng-show="isTrue">
+			<ul class="list_ul">
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+				<li>半袖</li>
+				<li>衬衣</li>
+			</ul>
+		</div>
+	</ion-content>
+</ion-view>

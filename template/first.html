@@ -1,0 +1,76 @@
+	<ion-view view-title="ZXIU 走秀网">
+		<ion-content>
+			<div class="bar-color">
+				<div class="bar_input">
+					<input type="text" placeholder="请输入搜索内容"/ >
+				</div>
+			</div>
+			<!--轮播图-->
+			<!--<ion-slide-box auto-play="true" does-continue="true" slide-interval="1000" pager-click="nextSlide(index)">
+				<ion-slide >
+				   <img src='img/333.jpg' />
+				</ion-slide>
+				<ion-slide>
+				   <img src='img/222.jpg' />
+				</ion-slide>
+				<ion-slide>
+				   <img src='img/333.jpg' />
+				</ion-slide><ion-slide>
+				   <img src='img/444.jpg' />
+				</ion-slide>
+			</ion-slide-box>-->
+			<!--请求数据的轮播图-->
+			<ion-slide-box auto-play="true" slide-interval="1000" does-continue="true">
+				<ion-slide ng-repeat="item in hotList">
+					<img class="pic_style" ng-src="{{item}}"/>
+				</ion-slide>
+			</ion-slide-box>
+			
+			
+			
+			<!--<div>
+				<img src="img/photo.png"  />
+			</div>
+			<h3 class="recommend">热门推荐</h3>-->
+			<!--<div class="list">
+
+			    <a class="item item-thumbnail-left" href="#">
+			      <img src="img/pic1.jpg">
+			      <h2>平时计算机去哦但是怕看见过类似的</h2>
+			    </a>
+			    <a class="item item-thumbnail-left" href="#">
+			      <img src="img/pic2.jpg">
+			      <h2>平时计算机去哦但是怕看见过类似的</h2>
+			    </a>
+			</div>-->
+			
+			<!--<ion-list>
+				<ion-item ng-repeat="item in hotList"  class="item-thumbnail-left">
+					<img src="{{item.pic}}" alt="" />
+					<h2>{{item.title}}</h2>
+				</ion-item>
+			</ion-list>-->
+			
+			<ion-list>
+				<ion-item ng-click="load_all()" ng-repeat="item in listdata" class="item-thumbnail-left">
+						<img ng-src="{{item.goodsListImg}}"  />
+						<h2 class="ion_h2">{{item.goodsName}}</h2>
+						<view class="view1">
+							<span class="ion_span">￥{{item.price}}</span>
+							<span></span>
+							<p>{{item.discount}}折</p>
+						</view>
+						<view class="view2">
+							<p ng-click="cartAdd()" class="cart"></p>
+						</view>
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-view>
+	
+	
+	
+	
+	
+	
+	

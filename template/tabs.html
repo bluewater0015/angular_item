@@ -1,0 +1,34 @@
+<!-- 定义模板的时候，不要把html的文档结构给它写出来。只需要写模板需要显示的代码 -->
+<!-- ion-tab里面的属性：
+	- title属性设置该选项卡的文字
+	- icon-on/icon-off  设置该选项卡下的图标 -->
+
+	<!-- 如果选项卡需要既显示文字，又要显示图标，那么需要给ion-tabs添加上tabs-icon-top的样式 -->
+	
+	<!-- 选项卡默认为我们提供了如下几种颜色：
+
+	default, light, stable, positive, calm, balanced, energized, assertive, royal,dark
+
+	用法：给ion-tabs添加样式，比如： tabs-color-light -->
+
+
+
+<ion-tabs class="tabs-icon-top tabs-color-positive">
+	<ion-tab title="首页" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" ui-sref="tabs.first">
+		<!-- 文章里面的页面，必须得放到该区域 -->
+		<ion-nav-view name="first-tab"></ion-nav-view>
+	</ion-tab>
+
+	<ion-tab title="分类" icon-on="ion-ios-keypad" icon-off="ion-ios-keypad-outline" ui-sref="tabs.classify">
+		<ion-nav-view name="classify-tab"></ion-nav-view>	
+	</ion-tab>
+	<ion-tab title="购物车" icon-on="ion-ios-cart" icon-off="ion-ios-cart-outline" ui-sref="tabs.cart">
+		<ion-nav-view name="cart-tab"></ion-nav-view>
+	</ion-tab>
+	<ion-tab title="我的秀" icon-on="ion-ios-person" icon-off="ion-ios-person-outline" ui-sref="tabs.own">
+		<ion-nav-view name="own-tab"></ion-nav-view>
+	</ion-tab>
+	<ion-tab title="更多" icon-on="ion-ios-more" icon-off="ion-ios-more-outline" ui-sref="tabs.more">
+		<ion-nav-view name="more-tab"></ion-nav-view>
+	</ion-tab>
+</ion-tabs>

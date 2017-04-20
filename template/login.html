@@ -1,0 +1,13 @@
+<ion-view title="登录">
+	<ion-nav-buttons side="right">
+		<button ng-click="login_right()" class="reg_login">注册</button>
+	</ion-nav-buttons>
+	<ion-content class="item items">
+		<form class="form">
+			<input class="form_input1 input" type="text" placeholder="账号" ng-model="made.name"/>
+			<input class="form_input2 input" type="password" placeholder="密码" ng-model="made.pwd"/>
+			<input class="form_checkbox" type="checkbox" />记住密码<a class="aa" href="#">忘记密码？</a><br />
+			<button class="form_agree" ng-click="login()">登录</button>
+		</form>
+	</ion-content>
+</ion-view>

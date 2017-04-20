@@ -1,0 +1,5 @@
+http://www.phonegap100.com/appapi.php?a=getThreadCate       获取帖子分类
+
+http://www.phonegap100.com/appapi.php?a=getThreadList&fid=2&page=1   获取帖子列表
+
+http://www.phonegap100.com/appapi.php?a=getThreadContent&tid=138    帖子详情以及回复的内容
